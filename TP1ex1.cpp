@@ -16,10 +16,9 @@ void saisie (fraction& a)
 	std::cout<<std::endl;
 }
 
-void affichage (fraction a, fraction b)
+void affichage (fraction a)
 {
-	std::cout<<"La fraction est : "<<a.num<<"/"<<a.den;
-	std::cout<<" La fraction est : "<<b.num<<"/"<<b.den;
+	std::cout<<a.num<<"/"<<a.den;
 	std::cout<<std::endl;
 }
 
@@ -38,8 +37,9 @@ int main()
  fraction A,B;
  saisie (A);
  saisie (B);
- affichage(A,B);
-  affichage(A, mult(A,B));
+ affichage(A);
+ affichage(B);
+  affichage(mult(A,B));
 
 	/*std::cout<<"La fraction finale est : "<< <<"/"<< ;
 	std::cin>> ;
